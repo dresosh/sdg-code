@@ -27,7 +27,7 @@ gulp.task( 'watch', function () {
 // sass compiler
 gulp.task( 'sass', function () {
  return gulp.src( 'app.scss' )
-   .pipe( sass( {outputStyle: 'expand'} ).on( 'error', sass.logError ) )
+   .pipe( sass( {outputStyle: 'compressed'} ).on( 'error', sass.logError ) )
    .pipe( gulp.dest( './' ) )
    .pipe( reload( { stream:true } ) )
 })
